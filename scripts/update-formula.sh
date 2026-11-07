@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="hrithiqball/tridennote-tui"
+REPO="tridennote/cli"
 FORMULA="Formula/tridennote.rb"
 
 TAG="${1:-$(curl -fsSL "https://api.github.com/repos/${REPO}/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')}"
